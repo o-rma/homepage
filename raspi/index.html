@@ -10,16 +10,10 @@
         var calendarEl = document.getElementById('calendar');
         let calendar = new FullCalendar.Calendar(calendarEl, {
   googleCalendarApiKey: 'AIzaSyA1q-qFCE2pHljo4GxRWQx6du1rxpHlbFA',
- headerToolbar: {
-    center: 'dayGridFourDay,dayGridMonth' // buttons for switching between views
-  },
-          views: {
-    dayGridFourDay: {
-      type: 'dayGrid',
+      initialView: 'dayGrid',
       duration: { days: 7 },
-      buttonText: '7 day'
-    }
-  }.
+      buttonText: '7 day',
+
 
   events: {
     googleCalendarId: 'jp8ljmbkl3m8od6ddnv85cjtpo@group.calendar.google.com'

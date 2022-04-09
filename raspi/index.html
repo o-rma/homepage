@@ -2,21 +2,19 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.css">
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.5.0/main.js"></script>
+    <link href='fullcalendar/main.css' rel='stylesheet' />
+    <script src='fullcalendar/main.js'></script>
     <script>
 
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
-        let calendar = new FullCalendar.Calendar(calendarEl, {
+        let calendar = new Calendar(calendarEl, {
   plugins: [ googleCalendarPlugin ],
   googleCalendarApiKey: 'AIzaSyA1q-qFCE2pHljo4GxRWQx6du1rxpHlbFA',
   events: {
     googleCalendarId: 'jp8ljmbkl3m8od6ddnv85cjtpo@group.calendar.google.com'
   }
 });
-        calendar.render();
-      });
 
     </script>
   </head>
@@ -24,3 +22,4 @@
     <div id='calendar'></div>
   </body>
 </html>
+

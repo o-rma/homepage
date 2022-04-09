@@ -10,7 +10,8 @@
         var calendarEl = document.getElementById('calendar');
         let calendar = new FullCalendar.Calendar(calendarEl, {
   googleCalendarApiKey: 'AIzaSyA1q-qFCE2pHljo4GxRWQx6du1rxpHlbFA',
-  initialView: 'listWeek',
+  initialView: 'timeline', // the name of a generic view
+  duration: { days: 7 }
 
   events: {
     googleCalendarId: 'jp8ljmbkl3m8od6ddnv85cjtpo@group.calendar.google.com'

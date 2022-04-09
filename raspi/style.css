@@ -2,3 +2,8 @@ body{
 background-color: black;
 color: white;
 }
+
+.fc-list-day-cushion .fc-cell-shaded{
+  background-color: black; !important
+
+}
